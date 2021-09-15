@@ -1,11 +1,28 @@
 body {
-  background-color: #ecf0f1;
+  background-color: #eefcff;
 }
 .btn {
   cursor: pointer;
 }
 body {
-  color: #2c3e50;
+  color: #ffffff;
+}
+h1 {
+  font-size: 120px;
+  font-weight: bold;
+  color: #ffffff;
+  top: 18%;
+  left: 34%;
+  position: absolute;
+}
+.js-weather {
+  font-size: 35px;
+  font-weight: bold;
+  top: 0;
+  right: 0;
+  margin-top: 12px;
+  margin-right: 12px;
+  position: absolute;
 }
 .clicked {
   color: #7f8c8d;
@@ -16,4 +33,21 @@ body {
 }
 .showing {
   display: block;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
 }
